@@ -75,9 +75,9 @@ let tanggalKemarin = new Date("2021-11-28")
 let tahun = tanggal.getFullYear()
 // console.log(tahun);
 let bulan = tanggal.getMonth()
-// console.log(bulan)
+console.log(bulan)
 let utcMonth = tanggal.getUTCMonth()
-// console.log(utcMonth);
+console.log(utcMonth);
 let tanggalString = tanggal.toDateString()
 // console.log(tanggalString);
 let tanggalStringLokal = tanggal.toLocaleDateString("id-ID")
@@ -94,5 +94,16 @@ let booleanFalse = false
 // console.log(booleanFalse);
 let booleanToAngka = Number(booleanTrue)
 let booleanToAngkaFalse = Number(booleanFalse)
-console.log(booleanToAngka);
-console.log(booleanToAngkaFalse);
+// console.log(booleanToAngka);
+// console.log(booleanToAngkaFalse);
+
+// string adalah immutable
+let stringUbahan = "asli"
+stringUbahan = "ubahan"
+
+if (20 == "20") {
+  console.log("tipe datanya sama")
+} else {
+  console.log("tipe datanya beda")
+
+}

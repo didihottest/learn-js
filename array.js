@@ -1,5 +1,10 @@
 // array non-associative
 const laptop = ['asus', 'hp', 'dell', 'lenovo']
+// loop menggunakan forin
+// for (const index in laptop) {
+//   let value = laptop[index]
+//   console.log(value)
+// }
 // laptop = ['viewsonic', "gigabyte"]
 // console.log(laptop[0])
 // console.log(laptop[1])
@@ -56,5 +61,23 @@ for (let index = 0; index < numbers.length; index++) {
   totalNumbers += numbers[index]
 }
 // console.log(totalNumbers);
-console.log(numbers.sort(function (a, b) { return b - a }))
+// console.log(numbers.sort(function (a, b) { return b - a }))
 // console.log(numbers.sort())
+
+const newNumbers = numbers.map(function (number, index) {
+  // console.log("number, " + number)
+  // console.log("index", index)
+  return number
+})
+
+// console.log(newNumbers)
+
+let randomNumbers = [100, 50, 20]
+
+// let sortedNumbers = randomNumbers.sort(function (a, b) { return a - b })
+
+let sortedNumbers = [...randomNumbers]
+sortedNumbers = sortedNumbers.sort(function (a, b) { return a - b })
+
+console.log(randomNumbers)
+console.log(sortedNumbers)
