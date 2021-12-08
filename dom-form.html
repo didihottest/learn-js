@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM FORM</title>
+  </head>
+  <body>
+    <form id="form">
+      <label for="first-name">First Name</label>
+      <input type="text" name="first_name" id="first_name" class="first_name" />
+      <br />
+      <br />
+      <label for="last-name">Last Name</label>
+      <input type="text" name="last_name" id="last_name" class="last_name" />
+      <br />
+      <br />
+      <label for="email">Email</label>
+      <input type="text" name="email" id="email" />
+      <br />
+      <br />
+      <button onclick="getName()">Submit Email</button>
+      <br />
+      <br />
+      <label for="">Gender</label>
+      <br />
+      <br />
+      <input
+        type="checkbox"
+        id="male"
+        value="pria"
+        onclick="getGenderValue()"
+      />
+      Pria
+      <br />
+      <br />
+      <input
+        type="checkbox"
+        id="female"
+        value="wanita"
+        onclick="getGenderValue()"
+      />
+      Wanita
+    </form>
+    <p id="output"></p>
+    <script src="dom-form.js"></script>
+  </body>
+</html>
